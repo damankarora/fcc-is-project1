@@ -41,8 +41,9 @@ app.use(helmet.noCache());
 
 app.use(helmet.contentSecurityPolicy({
   directives: {
-    "defaultSrc": ["'self'"],
-    "scriptSrc": ["'self'"]
+    "default-src": ["'self'"],
+    "script-src": ["'self'"],
+    "style-src": ["'self'"]
   }
 }))
 
